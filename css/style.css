@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-width: 800px;
+  height: 100%;
+}
+
+div {
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+}
+
+.wrapper {
+  width: 500px;
+  height: 100%;
+}
+
+.left {
+  width: 50%;
+  min-width: 100px;
+  display: inline-block;
+  float: left;
+  overflow-y: hidden;
+  height: 100%;
+  background-color: #eee;
+}
+
+.left-hide {
+  display: none;
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.right-half {
+  width: 50%;
+}
+
+.right-full {
+  width: 100%;
+}
+
+.border {
+  float: left;
+  width: 20px;
+  height: 100%;
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle-right::after {
+  content: "\003E\003E";
+}
+
+.toggle-left::after {
+  content: "\003C\003C";
+}
+
