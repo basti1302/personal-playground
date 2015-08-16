@@ -6,10 +6,12 @@
   "scripts": {
     "bundle": "webpack --progress --colors",
     "watch": "webpack --progress --colors --watch",
-    "start": "webpack-dev-server --progress --colors --devtool eval"
+    "start": "webpack-dev-server --progress --colors --devtool eval",
+    "postinstall": "npm run bundle"
   },
   "author": "Bastian Krol <bastian.krol@codecentric.de>",
   "dependencies": {
+    "font-awesome": "^4.4.0",
     "html5shiv": "^3.7.2",
     "jquery": "^2.1.3"
   },
