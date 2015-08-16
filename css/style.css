@@ -25,12 +25,12 @@ div {
   background-color: #559;
 }
 
-.left-show {
+.panel-shown .left {
   width: 50%;
   min-width: 100px;
 }
 
-.left-hide {
+.panel-hidden .left {
   width: 0px;
   border-width: 0px;
   min-width: 0px;
@@ -44,11 +44,11 @@ div {
   background-color: #595;
 }
 
-.right-half {
+.panel-shown .right {
   width: 50%;
 }
 
-.right-full {
+.panel-hidden .right {
   width: 100%;
 }
 
@@ -64,11 +64,10 @@ div {
   transform: translateY(-50%);
 }
 
-.toggle-right::after {
+.panel-hidden .toggle::after {
   content: "\003E\003E";
 }
 
-.toggle-left::after {
+.panel-shown .toggle::after {
   content: "\003C\003C";
 }
-
